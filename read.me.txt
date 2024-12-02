@@ -1,0 +1,36 @@
+Synthetic Data Creation:
+
+For the sake of this example, I generated some random weather data representing Pressure, Humidity, and WindSpeed. The temperature is modeled as a function of these features, plus some random noise for realism.
+Linear Regression Model:
+
+I used sklearn's LinearRegression to model the relationship between the features (Pressure, Humidity, WindSpeed) and the target (Temperature).
+Training and Testing:
+
+The data is split into training and testing sets using train_test_split. We train the model on the training set and test it on the testing set to evaluate the performance.
+Model Evaluation:
+
+I used Mean Squared Error (MSE) and Root Mean Squared Error (RMSE) to evaluate the model’s prediction accuracy.
+Prediction:
+
+After training, the model can be used to predict the temperature given new input features (e.g., Pressure, Humidity, and Wind Speed).
+Visualization:
+
+A scatter plot of actual vs. predicted temperatures is displayed to visualize the model's performance.
+Example Output:
+
+Mean Squared Error: 3.986
+Root Mean Squared Error: 1.997
+
+Predicted Temperature: 19.43°C
+Visualization:
+The scatter plot will show how close the predicted temperatures are to the actual temperatures. Ideally, points will be close to the diagonal line.
+
+Notes:
+Real Data: Instead of generating synthetic data, you could load a real dataset (e.g., from CSV, Excel, or any local file) containing historical weather data. You can use the pandas library to load and manipulate the dataset.
+Model Complexity: This is a simple model using linear regression, which is just a starting point. Depending on the dataset, more advanced models like Random Forest, Gradient Boosting, or Neural Networks can be used for better performance.
+Where to Find Real Weather Datasets:
+If you'd like to use real weather data, websites like Kaggle offer open datasets, such as:
+
+Weather data from Kaggle
+Global Historical Climatology Network (GHCN) data
+This approach allows you to build a weather prediction model locally using datasets without the need for external API calls.
